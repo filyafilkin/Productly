@@ -1,0 +1,127 @@
+@use "variables" as *;
+
+.footer {
+  background-color: $brown-dark;
+  padding-top: 70px;
+  text-align: center;
+
+  &__container {
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      display: flex;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__main {
+    @media screen and (max-width: $mobile) {
+      text-align: left;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    text-align: center;
+    @media screen and (max-width: $tablet) {
+      text-align: right;
+    }
+  }
+
+  &__copyright {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: $brown-light;
+    margin-bottom: 20px;
+  }
+
+  &__copyright--text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $brown-light;
+  }
+
+  &__phone--link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: $brown-light;
+    &:hover {
+      color: $tomato-light;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 35px;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+.footer__logo--hidden {
+  display: none;
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.footer-nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__item {
+    &:hover > .footer-nav__link {
+      color: $tomato-light;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $brown-light;
+  }
+}
+
+.footer-panel {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  @media screen and (max-width: $tablet) {
+    gap: 20px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    gap: 5px;
+  }
+
+  &__link {
+    padding: 5px;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: $white;
+    &:hover {
+      fill: $tomato-light;
+    }
+  }
+}

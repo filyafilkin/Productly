@@ -1,0 +1,60 @@
+.arivals {
+  margin-bottom: 80px;
+  position: relative;
+}
+.arivals__container {
+  margin: 0 auto;
+  text-align: center;
+}
+.arivals__heading {
+  margin-bottom: 70px;
+}
+.arivals__splide {
+  max-width: 85%;
+  margin: 0 auto 100px auto;
+}
+.arivals__splide--list {
+  display: flex;
+  flex-direction: row;
+}
+.arivals__splide--slide {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 2px solid #f8f1ea;
+  padding: 20px 0px;
+  transition: all 0.5s ease-in-out;
+}
+.arivals__splide--slide:hover {
+  border: 2px solid #f16a50;
+}
+
+.splide__arrow--prev svg {
+  transform: none;
+}
+
+.splide__arrow {
+  background: transparent;
+  opacity: 1;
+}
+.splide__arrow:hover svg {
+  fill: #f16a50;
+  opacity: 1;
+  transition: fill 0.3s;
+}
+.splide__arrow svg {
+  fill: #202020;
+  width: 40px;
+  height: 74px;
+}
+
+.splide__arrow--prev {
+  left: -70px;
+  transform: none;
+}
+
+.splide__arrow--next {
+  right: -70px;
+}
+/*# sourceMappingURL=arivals.css.map */

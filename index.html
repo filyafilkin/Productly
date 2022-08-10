@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnWay</title>
+    <link rel="icon" type="Image/x-icon" href="./images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/combine/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css,npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="./scripts/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <svg class="logo__icon">
+              <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Home</a>
+            </li>
+
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Catalog</a>
+            </li>
+
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">News</a>
+            </li>
+
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__icons icons">
+          <div class="icons__list">
+            <a class="icons__link" href="#">
+              <svg class="icons__item">
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg>
+            </a>
+            <a class="icons__link" href="#">
+              <svg class="icons__item">
+                <use xlink:href="./images/sprite.svg#profile"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="icons__menu menu">
+            <span class="menu__stripe menu__stripe--top"></span>
+            <span class="menu__stripe menu__stripe--middle"></span>
+            <span class="menu__stripe menu__stripe--bottom"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+          <div class="splide hero__splide" role="group" id="hero-splide">
+            <div class="splide__track hero__splide--track">
+              <ul class="splide__list hero__splide--list">
+                <li class="splide__slide hero__splide--slide">
+                  <div class="hero__container">
+                    <h1 class="hero__title title">Find your own style</h1>
+                    <a href="#" class="hero__btn btn--white">
+                      <span class="btn__text btn__text--white"> View more </span>
+                    </a>
+                  </div>
+                  <img
+                    class="hero__splide--img"
+                    src="./images/banner1.png"
+                    alt="Guitars"
+                  />
+                </li>
+
+                <li class="splide__slide hero__splide--slide">
+                  <div class="hero__container">
+                    <h1 class="hero__title title">Expand your horizons</h1>
+                    <a href="#" class="hero__btn btn--white">
+                      <span class="btn__text btn__text--white"> View more </span>
+                    </a>
+                  </div>
+                  <img
+                  class="hero__splide--img"
+                  src="./images/banner2.png"
+                  alt="Guitars"
+                  />
+                </li>
+
+                <li class="splide__slide hero__splide--slide">
+                  <div class="hero__container">
+                    <h1 class="hero__title title">Discover new options</h1>
+                    <a href="#" class="hero__btn btn--white">
+                      <span class="btn__text btn__text--white"> View more </span>
+                    </a>
+                  </div>
+                  <img
+                    class="hero__splide--img"
+                    src="./images/banner3.png"
+                    alt="Guitars"
+                  />
+                </li>
+              </ul>
+            </div>
+        </div>
+      </section>
+
+      <section class="arivals">
+        <div class="arivals__container container">
+          <h2 class="arivals__heading heading">New Arrivals</h2>
+          <div
+            class="splide arivals__splide"
+            role="group"
+            aria-label="Splide Basic HTML Example"
+            id="arivals-splide"
+          >
+          <div class="splide__arrows splide__arrows--wrapper">
+            <button
+              class="splide__arrow splide__arrow--prev"
+              type="button"
+              aria-label="Previous slide"
+              aria-controls="splide01-track"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#prev"></use>
+              </svg>
+            </button>
+            <button
+              class="splide__arrow splide__arrow--next"
+              type="button"
+              aria-label="Next slide"
+              aria-controls="splide01-track"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#next"></use>
+              </svg>
+            </button>
+          </div>
+            <div class="splide__track arivals__track">
+              <ul class="splide__list arivals__list">
+                <li class="splide__slide arivals__slide">
+                  <img
+                    src="./images/guitar1.png"
+                    alt="Hagstrom Alvar Limited Edition"
+                    class="arivals__img"
+                  />
+                  <h3 class="description">Hagstrom Alvar Limited Edition</h3>
+                  <span class="price__text">€2.990,00</span>
+                  <span class="arivals__status--stock">in stock</span>
+                </li>
+
+                <li class="splide__slide arivals__slide">
+                  <img
+                    src="./images/guitar2.png"
+                    alt="Hagstrom Tremar Viking Deluxe Cloudy Seas"
+                    class="arivals__img"
+                  />
+                  <h3 class="description">
+                    Hagstrom Tremar Viking Deluxe Cloudy Seas
+                  </h3>
+                  <span class="price__text">€1.300,00</span>
+                  <span class="arivals__status--stock">in stock</span>
+                </li>
+
+                <li class="splide__slide arivals__slide">
+                  <img
+                    src="./images/guitar3.png"
+                    alt="Gibson Les Paul Standard 60s"
+                    class="arivals__img"
+                  />
+                  <h3 class="description">Gibson Les Paul Standard 60s</h3>
+                  <span class="price__text">€3.749,00</span>
+                  <span class="arivals__status--sold">sold</span>
+                </li>
+
+                <li class="splide__slide arivals__slide">
+                  <img
+                    src="./images/guitar4.png"
+                    alt="Suhr Standard Plus Trans Blue Denim"
+                    class="arivals__img"
+                  />
+                  <h3 class="description">Suhr Standard Plus Trans Blue Denim</h3>
+                  <span class="price__text">€3.449,00</span>
+                  <span class="arivals__status--stock">in stock</span>
+                </li>
+
+                <li class="splide__slide arivals__slide">
+                  <img
+                    src="./images/guitar5.png"
+                    alt="Fender Telecaster Black Paisley Limited Edition"
+                    class="arivals__img"
+                  />
+                  <h3 class="description">
+                    Fender Telecaster Black Paisley Limited Edition
+                  </h3>
+                  <span class="price__text">€1.499,00</span>
+                  <span class="arivals__status--stock">in stock</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="#" class="arivals__btn btn">
+            <span class="btn__text"> View more </span>
+          </a>
+      </section>
+
+      <section class="partners">
+        <div class="partners__container container">
+          <h2 class="partners__heading heading">Our Partners</h2>
+          <div
+            class="splide partners__splide"
+            role="group"
+            id="partners-splide"
+          >
+
+          <div class="splide__arrows splide__arrows--wrapper">
+            <button
+              class="splide__arrow splide__arrow--prev partners-splide__arrow"
+              type="button"
+              aria-label="Previous slide"
+              aria-controls="splide01-track"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#prev"></use>
+              </svg>
+            </button>
+            <button
+              class="splide__arrow splide__arrow--next partners-splide__arrow"
+              type="button"
+              aria-label="Next slide"
+              aria-controls="splide01-track"
+            >
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#next"></use>
+              </svg>
+            </button>
+          </div>
+
+            <div class="splide__track partners__track">
+              <ul class="splide__list partners__list">
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/1.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/2.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/3.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/4.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/5.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/6.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/7.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/8.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+                <li class="splide__slide partners__slide">
+                  <img
+                    src="./images/9.png"
+                    alt="Epiphone"
+                    class="partners__img"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <a href="#" class="logo__link footer__logo footer__logo--hidden">
+          <svg class="logo__icon logo__icon--white">
+            <use xlink:href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
+        <div class="footer__content">
+          <div class="footer__main">
+           <a href="#" class="logo__link footer__logo">
+              <svg class="logo__icon logo__icon--white">
+                <use xlink:href="./images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+              
+            <nav class="footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link">Home</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link">Catalog</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link">News</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__contacts">
+            <h4 class="footer__title">Contact Us</h4>
+              <ul class="footer-panel">
+                <li class="footer-panel__item">
+                  <a href="#" class="footer-panel__link">
+                    <svg class="footer-panel__icon">
+                      <use xlink:href="./images/sprite.svg#inst"></use>
+                    </svg>
+                  </a>
+                  </li>
+      
+                  <li class="footer-panel__item">
+                    <a href="#" class="footer-panel__link">
+                      <svg class="footer-panel__icon">
+                        <use xlink:href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="footer-panel__item">
+                    <a href="#" class="footer-panel__link">
+                      <svg class="footer-panel__icon">
+                        <use xlink:href="./images/sprite.svg#pinterest"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="footer-panel__item">
+                    <a href="#" class="footer-panel__link">
+                      <svg class="footer-panel__icon">
+                        <use xlink:href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="footer-panel__item">
+                    <a href="#" class="footer-panel__link">
+                      <svg class="footer-panel__icon">
+                        <use xlink:href="./images/sprite.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              <span class="footer__phone">
+                <a href="tel:08003004040" class="footer__phone--link">0800 300 4040</a>
+                </span>
+          </div>
+        </div>
+        
+        <div class="footer__copyright">
+          <span class="footer__copyright--text">&copy; Copyright 2022. All rights reserved.</span>
+        </div>
+      </div>
+      </footer>
+  </body>
+</html>

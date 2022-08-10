@@ -1,0 +1,203 @@
+@use "variables" as *;
+@use "header";
+@use "hero";
+@use "arivals";
+@use "partners";
+@use "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+a {
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1370px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: auto 0;
+
+  &__icon {
+    fill: $tomato;
+    width: 150px;
+    height: 30px;
+  }
+
+  &__icon--white {
+    fill: $white;
+    width: 180px;
+    height: 35px;
+  }
+
+  &__link {
+    padding: 10px;
+  }
+}
+
+.logo__icon--white {
+  &:hover {
+    fill: $tomato-light;
+  }
+}
+
+// Fonts
+
+.title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  text-transform: uppercase;
+  color: $brown-light;
+  margin-bottom: 60px;
+  max-width: 400px;
+  text-align: center;
+  @media screen and (max-width: $tablet) {
+    font-size: 26px;
+    line-height: 32px;
+    max-width: 210px;
+    margin-bottom: 20px;
+  }
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: $black;
+  @media screen and (max-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  margin-bottom: 10px;
+  max-width: 205px;
+}
+
+.price__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: $black;
+}
+
+.btn__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $black;
+  @media screen and (max-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.btn__text--white {
+  color: $white;
+}
+
+// Buttons
+
+.btn {
+  border: 2px solid $black;
+  padding: 15px 50px;
+  text-decoration: none;
+  transition: all 0.3s;
+  max-width: 230px;
+  text-align: center;
+  &:hover {
+    background-color: $tomato-light;
+    border: 2px solid transparent;
+  }
+
+  &:hover > .btn__text {
+    color: $brown-light;
+  }
+}
+
+.btn--white {
+  border: 2px solid $white;
+  padding: 15px 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  max-width: 230px;
+  text-align: center;
+  &:hover {
+    background-color: $tomato-light;
+    border: 2px solid transparent;
+  }
+
+  &:hover > .btn__text--white {
+    color: $brown-light;
+  }
+}
+
+// Arrows
+
+.splide__arrow--prev svg {
+  transform: none;
+}
+
+.splide__arrow {
+  background: transparent;
+  width: auto;
+  height: auto;
+  opacity: 1;
+
+  &:hover svg {
+    fill: $tomato-light;
+    opacity: 1;
+    transition: fill 0.3s;
+  }
+
+  svg {
+    fill: $arrow-inactive;
+    width: 16px;
+    height: 30px;
+  }
+}
+
+.splide__arrow--prev {
+  left: -25px;
+}
+.splide__arrow--next {
+  right: -25px;
+}
+
+@media screen and (min-width: $desktop) {
+  .splide__arrow {
+    svg {
+      width: 40px;
+      height: 74px;
+    }
+  }
+
+  .splide__arrow--prev {
+    left: -55px;
+  }
+  .splide__arrow--next {
+    right: -55px;
+  }
+}
